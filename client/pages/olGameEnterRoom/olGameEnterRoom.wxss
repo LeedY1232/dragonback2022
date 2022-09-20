@@ -1,0 +1,59 @@
+/* pages/olGameEnterRoom/olGameEnterRoom.wxss */
+#roomIdText
+{
+  border-radius: 25rpx;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx rgba(7, 7, 7, 0.227);
+  margin:25rpx 25rpx 25rpx 25rpx ;
+  text-align: center;
+}
+#theTitle
+{
+  font-size: 50rpx;
+  color:#303030;
+  height:100rpx;
+  width:85%;
+  margin: 0 auto;
+  line-height:100rpx;
+}
+#setMargin
+{
+  margin-top: 180rpx;
+  margin-bottom: 270rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  text-align: center;
+}
+
+#inputBox
+{
+  font-size: 60rpx;
+}
+.textEnterRoom{
+  font-size: 140%;
+  line-height:110rpx;
+  color: white;
+  font-weight:750;
+}
+.textCreateAnother
+{
+  font-size: 140%;
+  line-height:110rpx;
+  color: #6b6a6a;
+  font-weight:750;
+}
+.button
+{
+  margin:30rpx 19% 30rpx 19%;
+  height:120rpx;
+  /* border: 4rpx solid #FFE4B5; */
+  border-radius: 25rpx;
+  text-align: center;
+}
+#enterThis
+{
+  background-color: #EEC591;
+}
+#createAnother
+{
+  background-color:rgba(128, 128, 128, 0.118) ;
+}

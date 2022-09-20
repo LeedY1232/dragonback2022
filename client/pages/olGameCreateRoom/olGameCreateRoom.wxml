@@ -1,0 +1,9 @@
+<!--pages/olGameCreateRoom/olGameCreateRoom.wxml-->
+<view id="card">
+<view class='theRoomIdIs'><text class='textClass'>生成的房间号为:</text></view>
+<view class='roomID'><text class='idNumber'>{{house_id}}</text></view>
+<view class='inviteYourFrined'><text class='textClass'>快去邀请你的小\n伙伴来加入吧！</text></view>
+</view>
+
+<view class='button' id="enterThis" bindtap="enterThisRoom"><text class='textEnterRoom'>进入此房间</text></view>
+<view class='button' id="inviteFriend" bindtap='invite'><text class='textinviteFriend'>邀请好友</text></view>

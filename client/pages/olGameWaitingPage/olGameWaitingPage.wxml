@@ -1,0 +1,31 @@
+<!--pages/olGameWaitingPage/olGameWaitingPage.wxml-->
+<view id="textBox">
+			<view id="theIcon">
+				<i  wx:if="{{allReady==false}}" class="weui-icon-waiting weui-icon_msg"></i>
+				<i  wx:else class="weui-icon-success weui-icon_msg"></i>
+			</view>
+			<view id="promptTip">
+				<h3 style="position: relative; top: 25rpx;">房间号:{{roomNum}}</h3>
+				<view style="position: relative;top: 8rpx;"><text id="tip">等待玩家准备</text></view>
+			</view>
+			<button hidden="{{ifThisRoomOwner==true}}" id="{{readyStatus==false?'buttonGreen':'buttonRed'}}" class='readyOrNot' bindtap="readyButton">{{readyStatus==false?'准备':'取消准备'}}</button>
+</view>
+<!-- type="primary" -->
+<button wx:if="{{ifThisRoomOwner==true}}" class='extractButton' id="{{allReady==true?'setGreen':'setGrey'}}" disabled="{{!allReady}}" bindtap='extract'><text class='extractText'>随机抽取玩家</text></button>
+<view class="infoCardSheet" >
+		<view class="infoCard" wx:for="{{playerArray}}" wx:key="*this">  
+		<!-- 当前循环次数为3 -->
+				<view hidden="{{item.if_ready==false&&thisRoomOwnerId!=item.openid}}" style="height:8rpx"><view class="weui-badge badgeStyle" id="{{thisRoomOwnerId==item.openid?'colorGold':'colorRed'}}">{{thisRoomOwnerId==item.openid?'房主':'准备'}}</view></view>
+				<image mode="widthFix" class="headPic" src="{{item.head_pic}}"></image>
+				<view class="infoCardText">
+						<!-- <view class="weui-badge" style="position: relative;top: 0.2em;right: -.4em;"><text style="font-size: medium">角标</text></view> -->
+						{{item.nick_name}}
+						<!-- <text class="infoText">准备完毕</text> -->
+				</view>
+		</view>
+</view>
+
+<!-- <i  class="weui-icon-waiting-circle"></i> -->
+
+
+

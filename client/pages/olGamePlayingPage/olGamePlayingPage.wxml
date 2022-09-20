@@ -1,0 +1,22 @@
+<!--pages/olGamePlayingPage/olGamePlayingPage.wxml-->
+<view>被惩罚人为：</view>
+<view>{{punishedPersonName}}<image mode="widthFix" class="headPic" src="{{punishedPersonHeadPic}}"></image></view>
+<view wx:if="{{ifBeingPunished==true}}">
+  <view>怎么倒霉的又是我啊</view>
+  <view hidden="{{ifChoosePunishMethod==true}}">
+    <button id="truth" bindtap="punishMethod">选择真心话！</button>
+    <button id="challenge" bindtap="punishMethod">选择大冒险！</button>
+  </view>
+  <view wx:for="{{cardList}}" wx:key="*this" class="{{currentChosenId==item.id?'setGray':'setYellow'}}" hidden="{{ifChoosePunishMethod==false}}" id="{{item.id}}" bindtap="choosePunish">
+    {{item.content}}
+  </view>
+  <button bindtap="acceptPunished" hidden="{{ifChoosePunishMethod==false}}">我已经接受此惩罚，点此返回</button>
+</view>
+<view wx:if="{{ifBeingPunished==false}}">
+  <view wx:if="{{cardInfo=='initStatus'}}">等待被惩罚玩家进一步操作，爷就是个看热闹的</view>
+  <view wx:else>
+    <view>此人选择的惩罚方式为：{{cardInfo.kind}}</view>
+    <view>{{cardInfo.content}}</view>
+  </view>
+</view>
+

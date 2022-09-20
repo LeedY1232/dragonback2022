@@ -1,0 +1,41 @@
+/* pages/game/game.wxss */
+
+.catalogue{
+  margin-top:30rpx;
+  text-align: center;
+}
+.blockCol
+{
+  display: inline-block;
+}
+.blockCol image
+{
+  margin:25rpx 12.5rpx 25rpx 12.5rpx;
+  border-radius: 28rpx;
+  width:312rpx;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx rgba(7, 7, 7, 0.227);
+}
+#maleGame
+{
+  background-color: teal;
+  height:270rpx;
+  display: block;
+}
+#femaleGame
+{
+  background-color: rgb(128, 0, 122);
+  height:390rpx;
+  display: block;
+}
+#mixGame
+{
+  background-color: rgb(134, 66, 66);
+  height:390rpx;
+  display: block;
+}
+#selfDimGame
+{
+  background-color: rgb(230, 171, 23);
+  height:270rpx;
+  display: block;
+}

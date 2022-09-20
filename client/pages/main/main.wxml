@@ -1,0 +1,41 @@
+<!--pages/main/main.wxml-->
+<view class="title">
+	<image src="/images/title_column.jpg" mode='widthFix'></image>
+</view>
+
+<button class="startBlock" bindtap='goToLocalGame'>
+	<image src="/images/localLogo.jpg" style="width:80rpx;" mode="widthFix"></image>
+	<text>本地游戏</text>
+</button>
+
+<button class="startBlock" open-type="getUserInfo"  bindgetuserinfo="getUserInfo">
+	<image src="/images/onlineLogo.jpg" style="width:80rpx;" mode="widthFix"></image>
+	<text>联机游戏</text>
+</button>
+
+<button class="help" bindtap='showHelp'>
+	<image src="/images/questionMark.jpg" style="height:100rpx;width:100rpx" mode="widthFix"></image>
+</button>
+
+<view class="helpWholePage" wx-if="{{help}}">
+	<view class="helpBlock">
+		<view class="helpCard" bindtap="shrink">
+			<text class="helpContent" animation="{{showHelpBlock}}"><text class="highlight">真心话大冒险PRO 1.0</text>
+
+			-疫情期间在家隔离，没有人一起玩，好无聊？
+			-聚会时总被问到不合时宜的真心话，好尴尬？
+			-轮到某人接受惩罚，还在换个不停，好无语？
+
+			不要犹豫，这款真心话大冒险PRO，就是为你准备的！
+
+			-<text class="red">联机模式</text> 轻轻一点，在家就能和朋友玩真心话大冒险！
+			-<text class="red">聚会分类</text> 该矜持时矜持，该奔放时就得奔放，不用害羞，大胆玩！
+			-<text class="red">惩罚等级</text> 卡牌分为金、银、铜三类，等级越高，难度越大！没人翻金卡？别担心，你身旁的幸运儿很有可能替代你成为惩罚对象，更有机会直接翻出魔法卡片，直接跳过下一次惩罚！
+			-<text class="red">次数限制</text> 每人最多三次翻牌机会，妈妈再也不用担心有人一直换题浪费聚会时间了！
+
+			还在等什么，快喊上朋友一起玩吧！
+			</text>
+			<image animation="{{showHelpBlock}}" mode="widthFix" src="/images/cardPicture/blank.jpg"></image>
+		</view>
+	</view>
+</view>

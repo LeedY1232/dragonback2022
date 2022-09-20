@@ -1,0 +1,105 @@
+/* pages/main/main.wxss */
+Page {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 70rpx;
+  border-radius: 25rpx;
+  text-align: center;
+  box-shadow: 20rpx 15rpx 30rpx 4rpx rgba(7, 7, 7, 0.227);
+}
+
+
+.startBlock {
+  margin-top: 5%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  
+}
+.startBlock::after {
+  border-width: 0;
+}
+
+.startBlock text {
+  color: black;
+  font-weight: bold;
+}
+
+.help {
+  margin-top: 10%;
+  background-color: white;
+  padding: 0;
+  width: 100rpx;
+  height: 100rpx;
+  border: none;
+  box-shadow: 20rpx 15rpx 30rpx 4rpx rgba(7, 7, 7, 0.227);
+}
+
+.helpWholePage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.helpBlock{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpCard image {
+  height: 105rpx;
+  width: 75rpx;
+  position: relative;
+  z-index: 210;
+}
+
+.helpContent{
+  color: black;
+  position: relative;
+  top: 100rpx;
+  height: 71rpx;
+  width: 57rpx;
+  line-height: 6rpx;
+  font-size:0.08rem;
+  text-align-last:auto;
+  -webkit-line-clamp: 2;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  z-index: 300;
+}
+
+.highlight{
+  font-size: 5rpx;
+  font-weight: bold;
+}
+.red{
+  color: red;
+  font-weight: bold;
+}

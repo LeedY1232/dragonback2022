@@ -1,0 +1,86 @@
+<!--pages/game1/game1.wxml-->
+<view class="mainPage">
+	<view class="body">
+		<view class="top">
+			<button class="choice" bindtap="truth" style="background-color:{{bgColor1}};">真心话</button>
+			<button class="choice" bindtap="adventure" style="background-color:{{bgColor2}};">大冒险</button>
+		</view>
+		<view class="penaltyBlock" animation="{{shuffleAnimation}}">
+			<view wx:if="{{choice == 0}}">
+				请选择真心话或者大冒险！
+			</view>
+			<view wx:if="{{choice == 1}}">
+				<view class="content">
+					<text>真心话 还剩 {{remainCount}} 次翻牌机会</text>
+					<view class="cardColumn">
+						<view class="cardRow">
+							<view class="cardBlock" wx:for="{{randomTruthArray}}" wx:if="{{index<3}}">
+								<button class="main" bindtap="uncoverTruth" animation="{{truthPenalty[item].is_front==true?animationMain:''}}" data-id="{{item}}">
+									<image class="card" src="{{frontCardImage[truthPenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+								<button class="back" bindtap="enlarge" animation="{{truthPenalty[item].is_front==true?animationBack:''}}" data-id="{{item}}">
+									<text class="cardContent">{{truthPenalty[item].content}}</text>
+									<image class="card" src="{{backCardImage[truthPenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+							</view>
+						</view>
+						<view class="cardRow">
+							<view class="cardBlock" wx:for="{{randomTruthArray}}" wx:if="{{index<6&&index>2}}">
+								<button class="main" bindtap="uncoverTruth" animation="{{truthPenalty[item].is_front==true?animationMain:''}}" data-id="{{item}}">
+									<image class="card" src="{{frontCardImage[truthPenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+								<button class="back" bindtap="enlarge" animation="{{truthPenalty[item].is_front==true?animationBack:''}}" data-id="{{item}}">
+									<text class="cardContent">{{truthPenalty[item].content}}</text>
+									<image class="card" src="{{backCardImage[truthPenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view wx:if="{{choice == 2}}">
+				<view class="content">
+					<text>大冒险 还剩 {{remainCount}} 次翻牌机会</text>
+					<view class="cardColumn">
+						<view class="cardRow">
+							<view class="cardBlock" wx:for="{{randomAdventureArray}}" wx:if="{{index<3}}">
+								<button class="main" bindtap="uncoverAdventure" animation="{{adventurePenalty[item].is_front==true?animationMain:''}}" data-id="{{item}}">
+									<image class="card" src="{{frontCardImage[adventurePenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+								<button class="back" bindtap="enlarge" animation="{{adventurePenalty[item].is_front==true?animationBack:''}}" data-id="{{item}}">
+									<text class="cardContent">{{adventurePenalty[item].content}}</text>
+									<image class="card" src="{{backCardImage[adventurePenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+							</view>
+						</view>
+						<view class="cardRow">
+							<view class="cardBlock" wx:for="{{randomAdventureArray}}" wx:if="{{index<6&&index>2}}">
+								<button class="main" bindtap="uncoverAdventure" animation="{{adventurePenalty[item].is_front==true?animationMain:''}}" data-id="{{item}}">
+									<image class="card" src="{{frontCardImage[adventurePenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+								<button class="back" bindtap="enlarge" animation="{{adventurePenalty[item].is_front==true?animationBack:''}}" data-id="{{item}}">
+									<text class="cardContent">{{adventurePenalty[item].content}}</text>
+									<image class="card" src="{{backCardImage[adventurePenalty[item].level]}}" mode='widthFix'></image>
+								</button>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<button class="shuffle" bindtap="changeTruthPenalty" wx-if="{{choice==1&&remainCount==0}}">重新发牌</button>
+		<button class="shuffle" bindtap="changeAdventurePenalty" wx-if="{{choice==2&&remainCount==0}}">重新发牌</button>
+	</view>
+	<view class="largeImg" wx-if="{{ifLargeImgShow}}">
+		<view class="largeImgWholePage" bindtap="shrink">
+			<view class="largeImgCard" wx-if="{{choice==1}}">
+				<text animation="{{shownImgAnimation}}">{{truthPenalty[shownImgIndex].content}}</text>
+				<image animation="{{shownImgAnimation}}" src="{{backCardImage[truthPenalty[shownImgIndex].level]}}" mode='widthFix'></image>
+			</view>
+			<view class="largeImgCard" wx-if="{{choice==2}}">
+				<text animation="{{shownImgAnimation}}">{{adventurePenalty[shownImgIndex].content}}</text>
+				<image animation="{{shownImgAnimation}}" src="{{backCardImage[adventurePenalty[shownImgIndex].level]}}" mode='widthFix'></image>
+			</view>
+		</view>
+	</view>
+</view>

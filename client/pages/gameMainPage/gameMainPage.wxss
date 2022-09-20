@@ -1,0 +1,136 @@
+/* pages/game1/game1.wxss */
+/* pages/game/game.wxss */
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  margin-left: 2.5%;
+}
+
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: auto;
+}
+
+.choice {
+  width: 40%;
+}
+
+.penaltyBlock {
+  height: 800rpx;
+  text-align: center;
+}
+
+.cardBlock {
+  margin-left: 10rpx;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 315rpx;
+  padding: 0;
+  position: flex;
+  backface-visibility: hidden;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.back {
+  height: 315rpx;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+.card {
+  width: 225rpx;
+}
+
+.cardContent {
+  width: 80%;
+  position: absolute;
+  top: 40rpx;
+  left: 20rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: white;
+}
+
+.shuffle {
+  margin-top: 100rpx;
+}
+
+.largeImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.largeImgWholePage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeImgCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeImgCard image {
+  height: 105rpx;
+  width: 75rpx;
+  position: relative;
+  z-index: 210;
+}
+
+.largeImgCard text {
+  color: white;
+  position: relative;
+  top: 100rpx;
+  height: 70rpx;
+  width: 55rpx;
+  text-align: center;
+  line-height: 13rpx;
+  font-size: 8rpx;
+  -webkit-line-clamp: 2;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  z-index: 300;
+}

@@ -1,0 +1,82 @@
+/* pages/olGameCreateRoom/olGameCreateRoom.wxss */
+view{
+  text-align: center;
+}
+text{
+  color:rgb(53, 53, 53)
+}
+#card
+{
+  border-radius: 25rpx;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx rgba(7, 7, 7, 0.09);
+  margin: 100rpx 13% 90rpx 13%;
+  height:600rpx;
+}
+.textClass{
+  font-size: 140%;
+}
+.idNumber{
+  font-size: 200%;
+  font-weight:550;
+  color:rgb(91, 89, 89);
+}
+.textEnterRoom{
+  font-size: 140%;
+  /* height:50rpx; */
+  line-height:100rpx;
+}
+.theRoomIdIs{
+  padding-top: 10%;
+  margin-bottom: 9%;
+}
+.inviteYourFrined{
+  margin-top: 9%;
+  /* margin-bottom: 10%; */
+}
+.roomID{
+  /* margin-top: 8%; */
+  margin-left: 13%;
+  margin-right: 13%;
+  border: 4rpx dotted #c3c3c3;
+  background-color: rgba(7, 7, 7, 0.01);
+  border-radius: 6025rpx;
+}
+.enterRoom{
+  /* margin-top: 8%; */
+  margin-left: 25%;
+  margin-right: 25%;
+  height:120rpx;
+  border: 4rpx solid #FFE4B5;
+  background-color: #FFFACD;
+  border-radius: 40rpx;
+}
+
+.textEnterRoom{
+  font-size: 140%;
+  line-height:110rpx;
+  color: white;
+  font-weight:750;
+}
+.textinviteFriend
+{
+  font-size: 140%;
+  line-height:110rpx;
+  color: #6b6a6a;
+  font-weight:750;
+}
+.button
+{
+  margin:30rpx 19% 30rpx 19%;
+  height:120rpx;
+  /* border: 4rpx solid #FFE4B5; */
+  border-radius: 25rpx;
+  text-align: center;
+}
+#enterThis
+{
+  background-color: #EEC591;
+}
+#inviteFriend
+{
+  background-color:rgba(128, 128, 128, 0.118) ;
+}

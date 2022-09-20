@@ -1,0 +1,18 @@
+/* pages/olGamePlayingPage/olGamePlayingPage.wxss */
+.headPic
+{
+  position: relative;
+  top:10rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100rpx;
+  margin: 5rpx 5rpx 7rpx 5rpx;
+}
+.setGray{
+  background-color: gray;
+  margin-top:15rpx;
+}
+.setYellow{
+  background-color: yellow;
+  margin-top:15rpx;
+}

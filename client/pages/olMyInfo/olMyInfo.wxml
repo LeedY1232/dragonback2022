@@ -1,0 +1,13 @@
+<!--pages/olMyInfo/olMyInfo.wxml-->
+<view class="sheet">
+	<image mode="widthFix" class="headPic" src="{{headPicPath}}"></image>
+	<view class="lineHeight">{{userName}}</view>
+	<view class="lineHeight">{{userLocation}}</view>
+	<view class="lineHeight">{{gender}}</view>
+
+	<!-- <view style="margin-top: 30rpx;">
+    <button class="chooseHead" wx:for="{{dataSets}}" data-id="{{index+1}}" bindtap="clickChange">头像{{index+1}}</button>
+  </view> -->
+
+	
+</view>

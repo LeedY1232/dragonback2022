@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/logs/logs",
+    "pages/game/game",
+    "pages/gameMainPage/gameMainPage",
+    "pages/onlineGame/onlineGame",
+    "pages/olGameCreateRoom/olGameCreateRoom",
+    "pages/olGameEnterRoom/olGameEnterRoom",
+    "pages/olGameWaitingPage/olGameWaitingPage",
+    "pages/olMyInfo/olMyInfo",
+    "pages/olGamePlayingPage/olGamePlayingPage"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFF68F",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "真心话大冒险Pro",
+    "backgroundColor": "white",
+    "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+<!--pages/olGameEnterRoom/olGameEnterRoom.wxml-->
+
+<view id="setMargin">
+  <view class="weui-cells weui-cells_after-title" id="roomIdText">
+		<view id='theTitle'>请输入房间号</view>
+		<view class="weui-cell weui-cell_input">
+			<input class="weui-input" bindinput='getInputValue' maxlength="6" type="number" id="inputBox" placeholder="房间号长度为6位" />
+		</view>
+	</view>
+</view>
+
+<view class='button' id="enterThis" bindtap='tryToEnterRoom'><text class='textEnterRoom'>进入此房间</text></view>
+<view class='button' id="createAnother" bindtap='clickCreate'><text class='textCreateAnother'>另行创建房间</text></view>

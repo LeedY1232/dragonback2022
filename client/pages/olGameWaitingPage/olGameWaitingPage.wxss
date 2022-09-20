@@ -1,0 +1,133 @@
+/* pages/olGameWaitingPage/olGameWaitingPage.wxss */
+#textBox{
+  margin: 50rpx 5% 30rpx 5%;
+  height:190rpx;
+  text-align:center;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 40rpx;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx rgba(7, 7, 7, 0.22) ;
+}
+#theIcon
+{
+  display:inline-block;
+  position: relative;
+  top: -28rpx;
+  margin-right: 12rpx;
+}
+.icon
+{
+  height:155rpx;
+  width:155rpx;
+}
+#promptTip
+{
+  text-align:center;
+  display:inline-block;
+  font-size:48rpx;
+  color: rgba(35,35,35);
+}
+#tip
+{
+  font-size:42rpx;
+}
+.headPic
+{
+  position: relative;
+  top:10rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100rpx;
+  margin: 5rpx 5rpx 7rpx 5rpx;
+}
+.infoCardText{
+  /* display:inline-block; */
+  font-size: medium;
+  display:block;
+  line-height: 40rpx;
+  border-top-style: solid;
+  border-color:rgb(182, 182, 182);
+  border-width:1rpx;
+}
+.infoCardSheet
+{
+  text-align:center;
+  box-shadow: 4rpx 4rpx 4rpx 4rpx rgba(7, 7, 7, 0.22);
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 40rpx;
+  margin: 30rpx 5% 65rpx 5%;
+}
+.infoCard{
+  /* border: 4rpx solid #FFD39B; */
+  display:inline-block;
+  border-radius: 20rpx;
+  padding:2rpx 10rpx 10rpx 10rpx ;
+  margin:6rpx 8rpx 10rpx 8rpx ;
+  width: 170rpx;
+  background-color: rgba(255,255,255,0.4);
+  box-shadow: 2rpx 2rpx 2rpx 2rpx rgba(7, 7, 7, 0.12);
+}
+
+.readyOrNot{
+  position: relative;
+  top: 28rpx;
+  margin:0 8rpx 0 22rpx;
+  height:134rpx;
+  width:134rpx;
+  border-radius: 100rpx;
+  text-align:center;
+  display: inline-block;
+  color:white;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10rpx;
+}
+.readyOrNotText{
+  font-size: 140%;
+  line-height:110rpx;
+  color:white;
+}
+#buttonRed
+{
+  background-color: #FF6A6A;
+  font-size: 120%;
+  line-height:55rpx;
+  
+}
+#buttonGreen
+{
+  background-color:  #7CCD7C;
+  font-size: 140%;
+  line-height:110rpx;
+}
+.extractButton
+{
+  margin:30rpx 19% 30rpx 19%;
+  height:120rpx;
+  /* border: 4rpx solid #FFE4B5; */
+  border-radius: 25rpx;
+  text-align: center;
+}
+
+.extractText{
+  font-size: 140%;
+  line-height:110rpx;
+  color: white;
+  font-weight:750;
+}
+.badgeStyle{
+  position: relative;
+  top: 0em;
+  right: -1.4em;
+  font-size: medium;
+  z-index:3;
+}
+#colorGold{
+  background-color: rgb(247, 178, 2);
+}
+#setGreen{
+  background-color: rgb(60, 177, 84);
+}
+#setGrey{
+  background-color: rgb(149, 157, 151);
+}

@@ -1,0 +1,16 @@
+<!--pages/onlineGame/onlineGame.wxml-->
+<!-- <view style="margin-left:35rpx;margin-top:40rpx;font-size:50rpx">真心话大冒险Online</view> -->
+<image src="/images/title_row.jpg" mode='widthFix' style="display:block;margin-left: 8rpx;margin-top: 25rpx;"></image>
+<view style="margin-left:35rpx; font-size:40rpx;color:gray;">联机模式</view>
+
+
+<view class="ceiClass">
+    <view id="createEnterCard">
+        <view class="functionCard" id="createRoom"  bindtap='clickCreate'><image id="pic12" src="/images/optionPicture/createRoom.jpg"></image></view>
+        <view class="functionCard" id="enterRoom" bindtap='clickEnter'><image id="pic12" src="/images/optionPicture/enterRoom.jpg"></image></view>
+    </view>
+    <view class="functionCard" id="personalInfo" bindtap='clickInfo' ><image id="pic3" src="/images/optionPicture/myInfo.jpg"></image></view>
+</view>
+
+    <view class="functionCard" id="tutorial" bindtap='clickHelp'><image id="pic4" src="/images/optionPicture/help.jpg"></image></view>
+

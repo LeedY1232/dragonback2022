@@ -1,0 +1,29 @@
+<!--pages/game/game.wxml-->
+<view>
+	<image src="/images/title_row.jpg" mode='widthFix'></image>
+</view>
+<view style="margin-left:35rpx; font-size:40rpx;color:gray;">本地模式</view>
+
+<!-- <view class="catalogue" bindtap='goToGame1'>
+</view>
+<view class="catalogue" bindtap='goToGame2'>
+</view>
+<view class="catalogue" bindtap='goToGame3'>
+	<image mode="widthFix" class="photos" src="/images/both.jpg"></image>
+</view> -->
+<view class="catalogue">
+	<view class="blockCol">
+		<navigator url="/pages/gameMainPage/gameMainPage?gameType=1">
+			<image id="maleGame" src="/images/optionPicture/malePic.jpg"></image>
+		</navigator>
+		<navigator url="/pages/gameMainPage/gameMainPage?gameType=3">
+			<image id="mixGame" src="/images/optionPicture/mixPic.jpg"></image>
+		</navigator>
+	</view>
+	<view class="blockCol">
+		<navigator url="/pages/gameMainPage/gameMainPage?gameType=2">
+			<image id="femaleGame" src="/images/optionPicture/femalePic.jpg"></image>
+		</navigator>
+		<image id="selfDimGame" bindtap='goToGame4' src="/images/optionPicture/selfDimPic.jpg"></image>
+	</view>
+</view>
