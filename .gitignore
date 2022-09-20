@@ -4,6 +4,8 @@
 
 *.jpg
 
+server/server/setting.py
+
 *.zip
 *.txt
 *.docx
